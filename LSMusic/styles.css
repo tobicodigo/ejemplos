@@ -72,3 +72,12 @@ input[type="submit"] {
   height: 35px;
 
 }
+
+
+video {
+	margin-top: 50px;
+	height:265px;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
+}

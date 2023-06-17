@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<title>LSMusic</title>
-<!--<link rel="stylesheet" href="styles.css">
-	-->
+    <link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+
 
 </head>
 
@@ -22,7 +23,7 @@
 			
 			<h1>Hazte socio</h1>
 		
-			<form class="formulario" action="server.php" method="post">
+			<form class="formulario" action="server.php" onsubmit="send(event,this)">
 		
 			<p><label>Email*:</label></p>
 				<p><input type="email" name="email" required></p>
@@ -55,6 +56,15 @@
 			<p><input type="checkbox" name="condiciones" required><label> *Aceptar <a href="#" title="las mejoras condiciones del mundo. Pagas nada. Acepta ahora!">condiciones</a></label></p>
 			<p><input type="submit" name="enviar" value="enviar"></p>		
 			</form>
+
+			<p id="answer"></p>
+
+		</section>
+		<section>
+			<video loop autoplay muted>
+				<source src="https://download.samplelib.com/mp4/sample-5s.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
 		</section>
 	</main>
 	
