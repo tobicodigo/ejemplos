@@ -1,0 +1,11 @@
+header {
+  background: black;
+  background-image: url("/img/header.jpg");
+  color:white;
+} 
+
+nav {
+
+    background-color: #61458C;
+    color:white;
+}
