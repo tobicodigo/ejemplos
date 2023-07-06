@@ -33,7 +33,7 @@ h3{
   font-size: 18px;
   font-weight:600;
 }
-
+ 
 
 nav {
     height:50px;
@@ -57,7 +57,7 @@ nav button:hover {
   color: #61458C;
   border-radius: 5px;
   cursor: pointer;
-}
+} 
 
 #whoweare, #portfolio, #emailus{
   text-align: center;
