@@ -1,0 +1,114 @@
+
+html, body {
+  margin: 0px;
+  padding:0px;
+}
+
+
+header {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  background: black;
+  background-image: url("/img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height:150px;
+  color:white;
+} 
+
+h1 {
+  top:auto;
+  font-weight: lighter;
+}
+
+h2{
+  color: #5D5D5D;
+  font-size: 20px;
+}
+
+h3{
+  color: #5D5D5D;
+  font-size: 18px;
+  font-weight:600;
+}
+
+
+nav {
+    height:50px;
+    background-color: #61458C;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+nav button {
+  background-color: #61458C;
+  color:white;
+  text-decoration: none;
+  margin-right: 30px;
+  padding:15px;
+  border:none;
+  
+}
+
+nav button:hover {
+  background-color: white;
+  color: #61458C;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#whoweare, #portfolio, #emailus{
+  text-align: center;
+  background-color: #F2F2F2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+p{
+  color: #5D5D5D;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+#whoweareimage{
+  float: left;
+  margin-right: 10px;
+
+}
+
+.box {
+  display: flex;
+  padding: 0px 20px 0px 20px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  text-align: justify;
+  flex: 50%;
+  max-width: 50%;
+  padding: 10px;
+}
+
+.smallercolumn {
+  text-align: justify;
+  flex: 30%;
+  max-width: 30%;
+  padding: 10px;
+}
+
+#adimg {
+ margin-left: 40px;
+ margin-right: 40px;
+ max-width: 80%;
+
+}
+
+
+#services {
+  text-align: center;
+  padding-top: 20px;
+}
