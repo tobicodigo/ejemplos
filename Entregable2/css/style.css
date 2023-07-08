@@ -66,7 +66,7 @@ nav button:hover {
   cursor: pointer;
 } 
 
-#whoweare, #portfolio, #emailUs{
+#whoweare, #portfolio, #emailus{
   text-align: center;
   background-color: #F2F2F2;
   padding-top: 20px;
@@ -95,7 +95,6 @@ p{
 }
 
 
-/* Create two equal columns that sits next to each other */
 .column {
   text-align: justify;
   flex: 50%;
@@ -140,23 +139,91 @@ p{
 }
 
 .fa-stack{
-text-align: center;;
+text-align: center;
 }
+
+.fa-solid {
+  transition: 0.5s;
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+
+
 .fa-cloud , .fa-code, .fa-wifi, .fa-earth-americas, .fa-flag, .fa-gear{
   color:#61458C;
 }
 
 .fa-wifi {
+  margin-left: -10px;
   rotate: 45deg;
 }
 
-.fa-circle {
-  color:#D3D3D3;
+
+.circle {
+  display: block;
+  height: 50px;
+  width: 60px;
+  border-color:#F2F2F2;
+  border-width:5px;
+  border-radius: 50%;
+  border-style: solid;
+  padding-bottom: 14px;
+  transition: 0.5s;
 }
+
+.circle:hover, .fa-solid:hover {
+  background-color:#61458C;
+  border-color: #61458C;
+  color: white;
+
+}
+
 
 #portfolio img {
  height:100px;
  width: 150px;
+}
+
+#portfolio img:hover {
+  height:100px;
+  width: 150px;
+  animation: rotation 2s;
+
+ }
+
+ #portfolio img:nth-of-type(5n+5):hover {
+  animation: rotationComplete 2s;
+
+ }
+
+ 
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotationComplete {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    border-radius: 50% ;
+        transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(160deg);
+    border-radius: 0% ;
+
+  }
 }
 
 iframe {
@@ -171,29 +238,35 @@ iframe {
   margin-right:20px;
 }
 
-#emailUs {
+#emailus {
   background-image: url("../img/map-image.png");
+  background-size: cover;
   background-color: #61458C;
   color: white;
   margin-top: 40px;
 }
 
-#emailUs h2 {
+#emailus h2 {
  color:white;
 }
 
+form {
+  display: contents;
+  text-align: center;
+
+}
 
 label {
   display:block;
-  line-height: 35px;
-  margin-top: 10px;
   text-align: right;
-  
+  line-height: 36px;
+  margin-top: 10px;
+
 }
-input[type=text], input[type=phone], input[type=email] {
+input[type=text], input[type=phone], input[type=email],textarea {
   display:block;
   height: 35px;
-  width: 300px;
+  width: 200px;
   border: 1px solid #000;
   margin-top: 10px;
 
@@ -204,13 +277,7 @@ input[type=submit] {
   width: 80px;
 }
 
-textarea {
-  display:block;
-  height: 60px;
-  width: 300px;
-  border: 1px solid #000;
-  margin-top: 10px;
-}
+
 
 footer {
   background-color: #61458C;

@@ -3,6 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>My Business Webpage</title>
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
       <link rel="stylesheet" href="css/style.css">
       <script src="https://kit.fontawesome.com/632dfba6fd.js" crossorigin="anonymous"></script>
    
@@ -56,10 +57,11 @@
             <h2>Our Services</h2>
             <article class="box" id="servicebox">
                <div class="image_column">
-                  <span class="fa-stack fa-2xl">
-                  <i class="fa-regular fa-circle fa-stack-2x"></i>
-                  <i class="fa-solid fa-cloud"></i>
-                  </span>
+                <span class="fa-stack fa-2xl">
+                    <span class="circle">
+                    <span class="fa-solid fa-cloud"></span>
+                </span>
+                </span>
                </div>
                <div class="column">
                   <h3>Service 1</h3>
@@ -68,10 +70,11 @@
                   </p>
                </div>
                <div class="image_column">
-                  <span class="fa-stack fa-2xl">
-                  <i class="fa-regular fa-circle fa-stack-2x"></i>
-                  <i class="fa-solid fa-code"></i>
-                  </span>
+                <span class="fa-stack fa-2xl">
+                    <span class="circle">
+                    <span class="fa-solid fa-code"></span>
+                </span>
+                </span>
                </div>
                <div class="column">
                   <h3>Service 2</h3>
@@ -79,10 +82,11 @@
                   </p>
                </div>
                <div class="image_column">
-                  <span class="fa-stack fa-2xl">
-                  <i class="fa-regular fa-circle fa-stack-2x"></i>
-                  <i class="fa-solid fa-wifi"></i>
-                  </span>
+                <span class="fa-stack fa-2xl">
+                    <span class="circle">
+                    <span class="fa-solid fa-wifi"></span>
+                </span>
+                </span>
                </div>
                <div class="column">
                   <h3>Service 3</h3>
@@ -92,10 +96,11 @@
             </article>
             <article class="box">
                <div class="image_column">
-                  <span class="fa-stack fa-2xl">
-                  <i class="fa-regular fa-circle fa-stack-2x"></i>
-                  <i class="fa-solid fa-earth-americas"></i>
-                  </span>
+                <span class="fa-stack fa-2xl">
+                    <span class="circle">
+                    <span class="fa-solid fa-earth-americas"></span>
+                </span>
+                </span>
                </div>
                <div class="column">
                   <h3>Service 4</h3>
@@ -103,10 +108,11 @@
                   </p>
                </div>
                <div class="image_column">
-                  <span class="fa-stack fa-2xl">
-                  <i class="fa-regular fa-circle fa-stack-2x"></i>
-                  <i class="fa-solid fa-flag"></i>
-                  </span>
+                <span class="fa-stack fa-2xl">
+                  <span class="circle">
+                  <span class="fa-solid fa-flag"></span>
+                </span>
+                </span>
                </div>
                <div class="column">
                   <h3>Service 5</h3>
@@ -114,10 +120,11 @@
                   </p>
                </div>
                <div class="image_column">
-                  <span class="fa-stack fa-2xl">
-                  <i class="fa-regular fa-circle fa-stack-2x"></i>
-                  <i class="fa-solid fa-gear"></i>
-                  </span>
+                <span class="fa-stack fa-2xl">
+                    <span class="circle">
+                    <span class="fa-solid fa-gear"></span>
+                </span>
+                </span>
                </div>
                <div class="column">
                   <h3>Service 6</h3>
@@ -166,28 +173,29 @@
                </div>
             </article>
          </section>
-         <section id="emailUs">
+         <section id="emailus">
           
                <h2>Email Us</h2>
                <article class="box">
-               <div class="column">
-                <label for="name">Name: *</label>
-                <label for="email">Email: *</label>
-                <label for="phone">Phone: </label>
-                <label for="subject">Subject: *</label>
-                <label for="message">Message: *</label>
+                <form action="#" method="post" autocomplete="on">
+                <div class="column">
+              
+                <label for="input_name">Name: *</label>
+                <label for="input_email">Email: *</label>
+                <label for="input_phone">Phone: </label>
+                <label for="input_subject">Subject: *</label>
+                <label for="input_message">Message: *</label>
                </div>
 
                <div class="column">
-               <form action="#" method="post">
-                    <input type="text" name="name" required>
-                    <input type="email" name="email" required>
-                    <input type="phone" name="phone">
-                     <input type="text" name="subject" required>
-                     <textarea name="message" required></textarea>
+                    <input type="text" name="name" id="input_name" autocomplete="on" required>
+                    <input type="email" name="email" id="input_email" autocomplete="on" required>
+                    <input type="phone" name="phone" id="input_phone" autocomplete="on">
+                     <input type="text" name="subject" id="input_subject" required>
+                     <textarea name="message" required id="input_message" required></textarea>
                      <input type="submit" name="submit" value="send">
-               </form>
             </div>
+        </form>
             </article>
          </section>
       </main>
