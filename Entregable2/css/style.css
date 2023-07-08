@@ -45,11 +45,11 @@ h3{
 nav {
     height:50px;
     background-color: #61458C;
-    padding-top: 5px;
+    padding-top: 23px;
     padding-left: 20px;
 }
 
-nav button {
+nav a {
   background-color: #61458C;
   color:white;
   text-decoration: none;
@@ -59,7 +59,7 @@ nav button {
   
 }
 
-nav button:hover {
+nav a:hover {
   background-color: white;
   color: #61458C;
   border-radius: 5px;
@@ -263,7 +263,7 @@ label {
   margin-top: 10px;
 
 }
-input[type=text], input[type=phone], input[type=email],textarea {
+input[type=text], input[type=tel], input[type=email],textarea {
   display:block;
   height: 35px;
   width: 200px;
@@ -290,5 +290,6 @@ footer {
 
 footer a {
   color:white;
+  text-decoration: none;
 
 }
