@@ -1,0 +1,295 @@
+
+html, body {
+  margin: 0px;
+  padding:0px;
+  font-family:opensans;
+}
+
+
+@font-face {
+  font-family: opensans;
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+header {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  background: black;
+  background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height:150px;
+  color:white;
+} 
+
+h1 {
+  top:auto;
+  font-weight: lighter;
+}
+
+h2{
+  color: #5D5D5D;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+h3{
+  color: #5D5D5D;
+  font-size: 18px;
+  font-weight:600;
+}
+ 
+
+nav {
+    height:50px;
+    background-color: #61458C;
+    padding-top: 23px;
+    padding-left: 20px;
+}
+
+nav a {
+  background-color: #61458C;
+  color:white;
+  text-decoration: none;
+  margin-right: 30px;
+  padding:15px;
+  border:none;
+  
+}
+
+nav a:hover {
+  background-color: white;
+  color: #61458C;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+
+#whoweare, #portfolio, #emailus{
+  text-align: center;
+  background-color: #F2F2F2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+p{
+  color: #5D5D5D;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+#whoweareimage{
+  float: left;
+  margin-right: 10px;
+
+}
+
+.box {
+  display: flex;
+  padding: 30px;
+  column-gap: 10px;
+  column-rule-style:#5D5D5D;
+}
+
+
+.column {
+  text-align: justify;
+  flex: 50%;
+  max-width: 50%;
+ 
+}
+
+#columnWithLine {
+  border-left-color: gainsboro;
+  border-left-width: 1px;
+  border-left-style: solid;
+  padding-left: 8px;;
+}
+
+#servicebox {
+  column-gap: 5px;
+
+}
+
+.column h3 {
+  margin-top: 0px;
+}
+
+.smallercolumn {
+  text-align: justify;
+  flex: 30%;
+  max-width: 30%;
+
+}
+
+#adimg {
+ margin-left: 40px;
+ margin-right: 40px;
+ margin-bottom: 10px;
+ max-width: 80%;
+}
+
+
+#services, #location {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.fa-stack{
+text-align: center;
+}
+
+.fa-solid {
+  transition: 0.5s;
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+
+
+.fa-cloud , .fa-code, .fa-wifi, .fa-earth-americas, .fa-flag, .fa-gear{
+  color:#61458C;
+}
+
+.fa-wifi {
+  margin-left: -10px;
+  rotate: 45deg;
+}
+
+
+.circle {
+  display: block;
+  height: 50px;
+  width: 60px;
+  border-color:#F2F2F2;
+  border-width:5px;
+  border-radius: 50%;
+  border-style: solid;
+  padding-bottom: 14px;
+  transition: 0.5s;
+}
+
+.circle:hover, .fa-solid:hover {
+  background-color:#61458C;
+  border-color: #61458C;
+  color: white;
+
+}
+
+
+#portfolio img {
+ height:100px;
+ width: 150px;
+}
+
+#portfolio img:hover {
+  height:100px;
+  width: 150px;
+  animation: rotation 2s;
+
+ }
+
+ #portfolio img:nth-of-type(5n+5):hover {
+  animation: rotationComplete 2s;
+
+ }
+
+ 
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotationComplete {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    border-radius: 50% ;
+        transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(160deg);
+    border-radius: 0% ;
+
+  }
+}
+
+iframe {
+  border-radius: 100%;
+  border-color:black;
+  
+
+}
+
+#iframeColumn {
+  text-align: right;
+  margin-right:20px;
+}
+
+#emailus {
+  background-image: url("../img/map-image.png");
+  background-size: cover;
+  background-color: #61458C;
+  color: white;
+  margin-top: 40px;
+}
+
+#emailus h2 {
+ color:white;
+}
+
+form {
+  display: contents;
+  text-align: center;
+
+}
+
+label {
+  display:block;
+  text-align: right;
+  line-height: 36px;
+  margin-top: 10px;
+
+}
+input[type=text], input[type=tel], input[type=email],textarea {
+  display:block;
+  height: 35px;
+  width: 200px;
+  border: 1px solid #000;
+  margin-top: 10px;
+
+}
+
+input[type=submit] {
+  margin-top:10px;
+  width: 80px;
+}
+
+
+
+footer {
+  background-color: #61458C;
+  text-align: right;
+  color:white;
+  font-size: 12px;
+  height:30px;
+  line-height: 30px;
+}
+
+footer a {
+  color:white;
+  text-decoration: none;
+
+}
