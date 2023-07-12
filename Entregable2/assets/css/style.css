@@ -1,8 +1,9 @@
 
 html, body {
-  margin: 0px;
+  margin: 0 auto;
   padding:0px;
   font-family:opensans;
+  max-width:1024px;
 } 
 
 
@@ -70,7 +71,7 @@ nav a:hover {
   text-align: center;
   background-color: #F2F2F2;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 
@@ -181,13 +182,12 @@ text-align: center;
 
 
 #portfolio img {
- height:100px;
- width: 150px;
+ height:160px;
+ width: 250px;
 }
 
 #portfolio img:hover {
-  height:100px;
-  width: 150px;
+
   animation: rotation 2s;
 
  }
