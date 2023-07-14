@@ -232,7 +232,7 @@ iframe {
 #emailus {
   background-image: url("../img/map-image.png");
   background-size: cover;
-  background-color: #61458c;
+  background-color: #78629E;
   color: white;
   margin-top: 40px;
 }
@@ -270,7 +270,7 @@ input[type="submit"] {
 }
 
 footer {
-  background-color: #61458C;
+  background-color: #62468C;
   text-align: right;
   color: white;
   font-size: 12px;
