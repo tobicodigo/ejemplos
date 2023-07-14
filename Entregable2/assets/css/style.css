@@ -248,9 +248,10 @@ form {
 
 label {
   display: block;
-  text-align: right;
   line-height: 36px;
   padding-bottom: 13px;
+  text-align: left;
+  margin-left: 230px;
 }
 
 input[type="text"],
@@ -262,6 +263,11 @@ textarea {
   width: 200px;
   border: 1px solid #000;
   margin-top: 10px;
+}
+
+textarea {
+  height: 75px;
+
 }
 
 input[type="submit"] {
