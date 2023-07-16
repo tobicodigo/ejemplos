@@ -1,15 +1,14 @@
-html,
-body {
-  margin: 0 auto;
-  padding: 0px;
+
+* {
+  box-sizing: border-box;
   font-family: opensans;
-  max-width: 1024px;
 }
 
 @font-face {
   font-family: opensans;
   src: url("../fonts/OpenSans-Regular.ttf");
 }
+
 
 header {
   padding-top: 100px;
@@ -20,7 +19,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  height: 150px;
+  height: 260px;
   color: white;
 }
 
@@ -33,6 +32,7 @@ h2 {
   color: #5d5d5d;
   font-size: 22px;
   font-weight: bolder;
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -41,35 +41,37 @@ h3 {
   font-weight: 600;
 }
 
-nav {
-  height: 50px;
+.navbar {
   background-color: #61458c;
-  padding-top: 23px;
-  padding-left: 20px;
 }
 
-nav a {
-  background-color: #61458c;
+
+
+.navbar-toggler-icon {
   color: white;
-  text-decoration: none;
-  margin-right: 30px;
-  padding: 15px;
-  border: none;
 }
 
+.nav-link {
+  color: white;
+  padding-top: 15px;
+  
+
+}
+/*
 nav a:hover {
   background-color: white;
   color: #61458c;
   border-radius: 5px;
   cursor: pointer;
 }
+*/
 
 #whoweare,
 #portfolio,
 #emailus {
   text-align: center;
   background-color: #f2f2f2;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 
@@ -180,9 +182,11 @@ p {
   padding-bottom:70px;
 }
 
+
 #portfolio img {
   height: 130px;
   width: 200px;
+  margin-top: 10px;
 }
 
 #portfolio img:hover {
@@ -219,15 +223,19 @@ p {
   }
 }
 
-iframe {
-  border-radius: 100%;
-  border-color: black;
+
+#article_location p {
+  text-align: left;
 }
 
-#iframeColumn {
-  text-align: right;
-  margin-right: 20px;
+
+iframe {
+  border-radius: 100%;
+  border: 2px solid black;
+  text-align: center;
 }
+
+
 
 #emailus {
   background-image: url("../img/map-image.png");
@@ -288,3 +296,67 @@ footer a {
   color: white;
   text-decoration: none;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+ header {
+   background-image: url("../img/header-mini.png");
+   height:250px
+  }
+
+  h2 {
+    font-size: 26px;
+
+  }
+
+  iframe {
+    margin-top:20px
+  }
+
+  .navbar-toggler {
+    right: 20px;
+  }
+
+  #navbarNav {
+    margin-top: 10px;
+    border-top: 1px solid white;  
+  }
+
+  .column {
+    text-align: justify;
+    flex: 0%;
+    max-width: 100%;
+  }
+
+  #columnWithLine {
+    border-left-width: 0px;
+    border-left-style: none;
+    padding-left: 0px;
+  }
+
+  
+
+  .box {
+    display: block;
+    padding: 20px;
+    column-gap: 0px;
+    column-rule-style:none;
+  }
+
+  #adimg {
+    display: none;
+  }
+
+  #servicebox {
+    column-gap: 0px;
+  }
+  
+  #article_location p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom:20px;
+  }
+
+
+ }
