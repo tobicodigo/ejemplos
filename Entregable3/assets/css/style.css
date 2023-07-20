@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   font-family: opensans;
@@ -8,7 +7,6 @@
   font-family: opensans;
   src: url("../fonts/OpenSans-Regular.ttf");
 }
-
 
 header {
   padding-top: 100px;
@@ -45,8 +43,6 @@ h3 {
   background-color: #61458c;
 }
 
-
-
 .navbar-toggler-icon {
   color: white;
 }
@@ -54,25 +50,18 @@ h3 {
 .nav-link {
   color: white;
   padding-top: 15px;
-  
-
 }
-/*
-nav a:hover {
-  background-color: white;
-  color: #61458c;
-  border-radius: 5px;
-  cursor: pointer;
-}
-*/
 
 #whoweare,
 #portfolio,
 #emailus {
-  text-align: center;
   background-color: #f2f2f2;
   padding-top: 30px;
   padding-bottom: 20px;
+}
+
+.container p {
+  text-align: justify;
 }
 
 p {
@@ -87,51 +76,35 @@ p {
   margin-right: 10px;
 }
 
-.box {
-  display: flex;
-  padding: 30px;
-  column-gap: 10px;
-  column-rule-style: #5d5d5d;
-}
-
-.column {
-  text-align: justify;
-  flex: 50%;
-  max-width: 50%;
-}
-
-#columnWithLine {
-  border-left-color: gainsboro;
-  border-left-width: 1px;
-  border-left-style: solid;
-  padding-left: 8px;
-}
-
-#servicebox {
-  column-gap: 5px;
-}
-
-.column h3 {
-  margin-top: 0px;
-}
-
-.smallercolumn {
-  text-align: justify;
-  flex: 30%;
-  max-width: 30%;
+.right-border {
+  border-right: 1px solid gainsboro;
 }
 
 #adimg {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 5px;
+  margin-right: 0px;
   margin-bottom: 10px;
   max-width: 80%;
+  float: right;
 }
 
 #services,
-#location {
+#location,
+#portfolio,
+#whoweare,
+#emailus h2 {
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+#services h3, #whoweare h3 {
+  text-align: left;
+}
+
+#services .col-md-3 {
+padding-top: 20px;
 }
 
 .fa-stack {
@@ -161,8 +134,8 @@ p {
 
 .circle {
   display: block;
-  height: 50px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   border-color: #f2f2f2;
   border-width: 5px;
   border-radius: 50%;
@@ -179,9 +152,8 @@ p {
 }
 
 #portfolio {
-  padding-bottom:70px;
+  padding-bottom: 70px;
 }
-
 
 #portfolio img {
   height: 130px;
@@ -193,7 +165,7 @@ p {
   animation: rotation 2s;
 }
 
-#portfolio img:nth-of-type(5n + 5):hover {
+#animatedImage img:hover {
   animation: rotationComplete 2s;
 }
 
@@ -223,24 +195,16 @@ p {
   }
 }
 
-
-#article_location p {
-  text-align: left;
-}
-
-
 iframe {
   border-radius: 100%;
   border: 2px solid black;
   text-align: center;
 }
 
-
-
 #emailus {
   background-image: url("../img/map-image.png");
   background-size: cover;
-  background-color: #78629E;
+  background-color: #78629e;
   color: white;
   margin-top: 40px;
 }
@@ -249,33 +213,22 @@ iframe {
   color: white;
 }
 
-form {
-  display: contents;
-  text-align: center;
+#emailus .col {
+  text-align: left;
 }
 
-label {
-  display: block;
-  line-height: 36px;
-  padding-bottom: 13px;
-  text-align: left;
-  margin-left: 74%;
+#emailus .row {
+  margin-top: 10px;
 }
 
 input[type="text"],
 input[type="tel"],
 input[type="email"],
 textarea {
-  display: block;
-  height: 35px;
-  width: 200px;
-  border: 1px solid #000;
-  margin-top: 10px;
 }
 
 textarea {
   height: 75px;
-
 }
 
 input[type="submit"] {
@@ -284,7 +237,7 @@ input[type="submit"] {
 }
 
 footer {
-  background-color: #62468C;
+  background-color: #62468c;
   text-align: right;
   color: white;
   font-size: 12px;
@@ -297,21 +250,18 @@ footer a {
   text-decoration: none;
 }
 
-
-
-@media only screen and (max-width: 767px) {
- header {
-   background-image: url("../img/header-mini.png");
-   height:250px
+@media only screen and (max-width: 768px) {
+  header {
+    background-image: url("../img/header-mini.png");
+    height: 250px;
   }
 
   h2 {
     font-size: 26px;
-
   }
 
   iframe {
-    margin-top:20px
+    margin-top: 20px;
   }
 
   .navbar-toggler {
@@ -320,43 +270,25 @@ footer a {
 
   #navbarNav {
     margin-top: 10px;
-    border-top: 1px solid white;  
+    border-top: 1px solid white;
   }
 
-  .column {
-    text-align: justify;
-    flex: 0%;
-    max-width: 100%;
-  }
-
-  #columnWithLine {
-    border-left-width: 0px;
-    border-left-style: none;
-    padding-left: 0px;
-  }
-
-  
-
-  .box {
-    display: block;
-    padding: 20px;
-    column-gap: 0px;
-    column-rule-style:none;
+  .right-border {
+    border-right: none;
   }
 
   #adimg {
     display: none;
   }
 
-  #servicebox {
-    column-gap: 0px;
-  }
-  
   #article_location p {
     text-align: center;
     padding-top: 20px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
   }
 
-
- }
+  #services .col-md-1 {
+    text-align: left;
+  }
+}
+Í
