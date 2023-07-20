@@ -57,7 +57,12 @@ h3 {
 #emailus {
   background-color: #f2f2f2;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+
+#whowearecontainer {
+margin-top: 50px;
 }
 
 .container p {
