@@ -47,10 +47,12 @@ h3 {
   color: white;
 }
 
+
 .nav-link {
   color: white;
   padding-top: 15px;
 }
+
 
 #whoweare,
 #portfolio,
@@ -60,9 +62,8 @@ h3 {
   padding-bottom: 40px;
 }
 
-
 #whowearecontainer {
-margin-top: 50px;
+  margin-top: 50px;
 }
 
 .container p {
@@ -101,16 +102,14 @@ p {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-
 }
 
-#services h3, #whoweare h3 {
+#services h3,
+#whoweare h3 {
   text-align: left;
 }
 
-#services .col-md-3 {
-padding-top: 20px;
-}
+
 
 .fa-stack {
   text-align: center;
@@ -218,12 +217,13 @@ iframe {
   color: white;
 }
 
-#emailus .col {
-  text-align: left;
-}
 
 #emailus .row {
   margin-top: 10px;
+}
+
+.form-group {
+  text-align: right;
 }
 
 input[type="text"],
@@ -236,9 +236,9 @@ textarea {
   height: 75px;
 }
 
-input[type="submit"] {
+#submitButtonContainer {
   margin-top: 10px;
-  width: 80px;
+  text-align: center;
 }
 
 footer {
@@ -255,7 +255,9 @@ footer a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-width: 576px) {
   header {
     background-image: url("../img/header-mini.png");
     height: 250px;
@@ -292,8 +294,52 @@ footer a {
     padding-bottom: 20px;
   }
 
-  #services .col-md-1 {
+  .form-group {
     text-align: left;
   }
+
+
+
+ 
 }
-Í
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  header {
+    background-image: url("../img/header-mini.png");
+    height: 250px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  iframe {
+    margin-top: 20px;
+  }
+
+  .right-border {
+    border-right: none;
+  }
+
+  #adimg {
+    display: none;
+  }
+
+  #article_location p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  header {
+    background-image: url("../img/header.jpg");
+    height: 250px;
+  }
+
+}
