@@ -43,7 +43,7 @@ h3 {
   background-color: #61458c;
 }
 
-.navbar-toggler-icon {
+.navbar {
   color: white;
 }
 
@@ -226,12 +226,6 @@ iframe {
   text-align: right;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-textarea {
-}
-
 textarea {
   height: 75px;
 }
@@ -252,7 +246,6 @@ footer {
 
 footer a {
   color: white;
-  text-decoration: none;
 }
 
 
@@ -263,8 +256,27 @@ footer a {
     height: 250px;
   }
 
+  .container {
+    padding-top:15px;
+  }
+
   h2 {
-    font-size: 26px;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #4E4E4E;
+  }
+
+  h3 {
+    font-weight: bolder;
+    color: #333333;
+    font-size: 20px;
+
+  }
+
+  #whoweare_paragraph{
+    padding-left: 30%;
+    padding-right: 30%;
+
   }
 
   iframe {
@@ -273,6 +285,7 @@ footer a {
 
   .navbar-toggler {
     right: 20px;
+    border-color: white;
   }
 
   #navbarNav {
@@ -298,6 +311,21 @@ footer a {
     text-align: left;
   }
 
+    #emailus label {
+      font-weight: 1000 ;
+      
+    }
+
+    strong {
+      font-weight: bold;
+      color: black;
+    }
+
+   #portfolio p {
+      padding-left: 30%;
+      padding-right: 30%;
+
+    }
 
 
  
@@ -331,6 +359,10 @@ footer a {
     padding-bottom: 20px;
   }
 
+  #services .container {
+    padding-top:20px
+  }
+
 
 
 }
@@ -340,6 +372,10 @@ footer a {
   header {
     background-image: url("../img/header.jpg");
     height: 250px;
+  }
+
+  #article_location p {
+    padding-top:30px;
   }
 
 }
