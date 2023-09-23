@@ -204,6 +204,20 @@ footer {
 footer a {
   color: white;
 }
+
+     .fadeup {
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: 1s;
+      transition-timing-function: linear;
+     }
+
+    .in-view.fadeup, .in-view .fadeup{ 
+        transform: none;
+        opacity: 1;
+    }
+
+
 @media only screen and (max-width: 576px) {
   header {
     background-image: url("../img/header-mini.png");
@@ -262,6 +276,8 @@ footer a {
     padding-left: 30%;
     padding-right: 30%;
   }
+  
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   header {
