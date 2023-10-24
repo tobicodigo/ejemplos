@@ -1,4 +1,5 @@
 import { logMe as log, year} from "./imported.mjs";
+import  {addDays}  from "./addDays.mjs";
 
 
 let c = 5
@@ -40,3 +41,8 @@ console.log(user.fullName())
 
 log("hola",324)
 console.log(year);
+
+
+let today = new Date()
+let tomorrow = addDays(today,1)
+console.log(tomorrow)
