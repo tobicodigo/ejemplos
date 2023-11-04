@@ -24,8 +24,8 @@ export default {
   changeTextColor() {
     
   },
-  changePostItColor(){
-    this.isActive=true
+  changePostItColor(isActive){
+    this.isActive=isActive
     
   },
 }
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-  <p @mouseover="changePostItColor()" :class="[isActive ? postItStyle: 'postItStyle' , 'postit']">{{this.title}}
+  <p @mouseover="changePostItColor(true)" @mouseleave="changePostItColor(false)" :class="[isActive ? postItStyle: 'postItStyle' , 'postit']">{{this.title}}
     <ul>
   <li v-for="item in data" :key="item">{{item}}</li>
 </ul>
