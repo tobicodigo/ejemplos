@@ -5,9 +5,10 @@ export default {
       title: "Hola",
       data: ['a', 'b', 'c'],
       titles: ['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday'],
-
       buttonTitle: "Click me",
-      spanText: "Mouseover me"
+      spanText: "Mouseover me",
+      isActive:false,
+      postItStyle:"postit"
     };
   },
   mounted() {
@@ -15,20 +16,24 @@ export default {
   },
   methods:{
   changeTitle() {
-   
-
     this.buttonTitle = this.titles[Math.floor(Math.random() * 7)]
-
   },
   changeSpan() {
     this.spanText = "Thank you"
-  }
+  },
+  changeTextColor() {
+    
+  },
+  changePostItColor(){
+    this.isActive=true
+    
+  },
 }
 };
 </script>
 
 <template>
-  <p id="postit">{{this.title}}
+  <p @mouseover="changePostItColor()" :class="[isActive ? postItStyle: '' , 'postit']">{{this.title}}
     <ul>
   <li v-for="item in data" :key="item">{{item}}</li>
 </ul>
@@ -39,12 +44,16 @@ export default {
 </template>
 
 <style scoped>
-#postit {
+.postit {
   margin: 25px;
   width: 250px;
   min-height: 250px;
   max-height: 250px;
   padding: 35px;
-  background: #ffff88; /* Old browsers */
+  background-color: #ffff88;
+}
+
+.postItStyle{
+    background-color: blueviolet;
 }
 </style>
