@@ -24,15 +24,40 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
-    ></script>
-      <script src="assets/js/scripts.js" async></script>
-            <script src="assets/js/observer.js"></script>
+    >
+    
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+
+    <script src="assets/js/weatherbar.js"></script>
+    
+    <script  src="assets/js/quiz.js"></script>
+    <script  src="assets/js/scripts.js" async></script>
+    <script src="assets/js/observer.js"></script>
 
   </head>
   <body>
     <header>
       <h1>My Business Webpage</h1>
     </header>
+
+    <nav id="weatherBar">
+      <ul>
+        <li>
+          <span class="fa-solid fa-temperature-three-quarters"></span>
+          <span id="temperature"></span>
+        </li>
+        <li>
+          <span class="fa-solid fa-location-dot"></span> <span id="city"></span>
+        </li>
+        <li><img id="mainImage" /><span id="main"></span></li>
+        <li>
+          <span class="fa-solid fa-droplet"></span><span id="humidity"> </span>
+        </li>
+        <li><span class="fa-solid fa-wind"></span><span id="wind"> </span></li>
+        <li><button class="btn-close" onclick="hideWeatherBar()"></button></li>
+      </ul>
+    </nav>
 
     <nav class="navbar navbar-expand-sm navbar-dark">
       <div class="container-fluid">
@@ -68,9 +93,37 @@
         </div>
       </div>
     </nav>
+    
+
+    <section id="easteregg" class="fadeup">
+      <div id="fireworks"></div>
+      <div id="quiz">
+      <h1>Quiz</h1>
+      Ronda: <span id="rounds"></span><br />Puntos: <span id="points"></span
+      ><br /><br />
+      <span id="eastereggQuestion"></span>
+      <br />
+      <form>
+        <input type="radio" id="answer1" name="quiz" />
+        <label for="answer1" id="labelAnswer1"></label><br />
+        <input type="radio" id="answer2" name="quiz" />
+        <label for="answer2" id="labelAnswer2"></label><br />
+        <input type="radio" id="answer3" name="quiz" />
+        <label for="answer3" id="labelAnswer3"></label><br /><br>
+        <span id="result"></span>
+        <button type="button" onclick="checkAnswer()">Submit</button><br />
+      </form>
+    </div>
+    <span id="gameResult">
+        <span>Gracias por jugar.</span>
+        <button type="button" onclick="resetGame()">Jugar otra vez</button>
+      </span>
+    </section>
+  </div>
+
 
     <main>
-      <section id="whoweare" class="fadeup">
+      <section id="whoweare" class="fadeup" data-key="1">
         <h2>Who we are?</h2>
         <p id="whoweare_paragraph">
           Lorem insum dolor sit amet. consectetur adiniscing elit<br />Mauris
@@ -148,7 +201,7 @@
         </article>
       </section>
 
-      <section id="services"  class="fadeup">
+      <section id="services" class="fadeup" data-key="2">
         <h2>Our Services</h2>
         <article>
           <div class="container">
@@ -250,7 +303,7 @@
           </div>
         </article>
       </section>
-      <section id="portfolio"  class="fadeup">
+      <section id="portfolio" class="fadeup" data-key="3">
         <h2>Portfolio</h2>
         <article>
           <p>There are success projects created by us</p>
@@ -293,7 +346,7 @@
           </div>
         </article>
       </section>
-      <section id="location"  class="fadeup">
+      <section id="location" class="fadeup" data-key="4">
         <h2>Location</h2>
         <p>You can find us:</p>
         <article id="article_location">
@@ -332,7 +385,7 @@
           </div>
         </article>
       </section>
-      <section id="emailus"  class="fadeup">
+      <section id="emailus" class="fadeup" data-key="5">
         <h2>Email Us</h2>
         <article>
           <form action="#" method="post" autocomplete="on">
@@ -424,4 +477,5 @@
       Rights Reserved.
     </footer>
   </body>
+  <script src="assets/js/modal.js"></script>
 </html>

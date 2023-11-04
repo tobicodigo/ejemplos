@@ -92,7 +92,7 @@ p {
 .fa-stack {
   text-align: center;
 }
-.fa-solid {
+#services .fa-solid {
   transition: 0.3s;
   width: 100%;
   height: 100%;
@@ -122,7 +122,7 @@ p {
   transition: 0.3s;
 }
 .circle:hover,
-.fa-solid:hover {
+#services .fa-solid:hover {
   background-color: #61458c;
   border-color: #61458c;
   color: white;
@@ -205,18 +205,120 @@ footer a {
   color: white;
 }
 
-     .fadeup {
-      opacity: 0;
-      transition-property: opacity;
-      transition-duration: 1s;
-      transition-timing-function: linear;
-     }
+.fadeup {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
 
-    .in-view.fadeup, .in-view .fadeup{ 
-        transform: none;
-        opacity: 1;
-    }
+.in-view.fadeup,
+.in-view .fadeup {
+  transform: none;
+  opacity: 1;
+}
 
+#weatherBar {
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+  display: none;
+  background-color: #61458cbe;
+  height: 60px;
+  color: white;
+  text-align: center;
+}
+
+#weatherBar li {
+  display: inline;
+  padding-left: 40px;
+}
+
+#weatherBar span {
+  margin-right: 10px;
+}
+
+#easteregg {
+  padding: 50px;
+  display: none;
+  text-align: center;
+  height:500px;
+  width:50%;
+  margin:0% auto;
+}
+
+#fireworks {
+  height:500px;
+  width:100%;
+}
+
+#quiz {
+  margin-top: -500px;
+  padding: 30px;
+  border: 3px solid #61458c;
+  text-align: left;
+}
+
+#quiz h1 {
+  color: #61458c;
+}
+
+#gameResult {
+  padding: 50px;
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 20%;
+  z-index: 1;
+}
+
+.modal-content {
+  background: rgb(240, 236, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 236, 246, 1) 0%,
+    rgba(165, 158, 176, 1) 100%
+  );
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  position: relative;
+}
+
+.list-group {
+  border-radius: 1px solid;
+}
+
+.list-group-item {
+  border: 5px solid rgba(255, 255, 255, 0.575);
+  background-color: #61458c60;
+  padding: 5px;
+  font-size: large;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#titleList {
+  padding:20px;
+  font-size: larger;
+  font-weight: bolder;
+  list-style-type:decimal;
+  line-height: 1.5;
+  padding: 0;
+}
 
 @media only screen and (max-width: 576px) {
   header {
@@ -276,8 +378,6 @@ footer a {
     padding-left: 30%;
     padding-right: 30%;
   }
-  
-  
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   header {
