@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-  <p @mouseover="changePostItColor()" :class="[isActive ? postItStyle: '' , 'postit']">{{this.title}}
+  <p @mouseover="changePostItColor()" :class="[isActive ? postItStyle: 'postItStyle' , 'postit']">{{this.title}}
     <ul>
   <li v-for="item in data" :key="item">{{item}}</li>
 </ul>
@@ -50,10 +50,10 @@ export default {
   min-height: 250px;
   max-height: 250px;
   padding: 35px;
-  background-color: #ffff88;
+  background-color: rgb(184, 108, 255);
 }
 
 .postItStyle{
-    background-color: blueviolet;
+    background-color: #ffff88;
 }
 </style>
