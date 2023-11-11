@@ -12,7 +12,7 @@ import compositionApi from './components/compositionApi.vue';
 <template>
 
 <formulario></formulario>
-
+<br><br><br><br>
 <listas></listas>
 <br><br><br><br>
 <condicionales1></condicionales1>
@@ -31,5 +31,8 @@ import compositionApi from './components/compositionApi.vue';
 </template>
 
 <style scoped>
-
+formulario {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 </style>
