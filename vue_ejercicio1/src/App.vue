@@ -1,6 +1,8 @@
 <script setup>
+import formulario from './components/formulario.vue';
+import listas from './components/listas.vue';
+import condicionales1 from './components/condicionales1.vue';
 import reactivity from './components/reactivity.vue';
-
 import lifecycle from './components/lifecycle.vue';
 import optionsApi from './components/optionsApi.vue';
 import compositionApi from './components/compositionApi.vue';
@@ -8,6 +10,15 @@ import compositionApi from './components/compositionApi.vue';
 </script>
 
 <template>
+
+<formulario></formulario>
+
+<listas></listas>
+<br><br><br><br>
+<condicionales1></condicionales1>
+<br>
+<br><br>
+
 <reactivity></reactivity>
 <br><br>
 <lifecycle></lifecycle>
